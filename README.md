@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Portfolio Website
+## Important Notice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Admin Credentials:*
+- *email:* jshobhit3020@gmail.com
+- *Password:* 12345678
 
-## Available Scripts
+*Git Cloning Notice:*
+- Please note that if the application does not run directly after cloning the repository, below is the deployed live link.
 
-In the project directory, you can run:
+*Deployed Link:*
+- Click [here](lucidgrowthproject.netlify.app)
+## Flow of Application
 
-### `npm start`
+### User View
+*Register*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![User Register](https://i.imgur.com/RXWgFxC.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+*Login*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![User Login](https://i.imgur.com/bsFObEy.png)
 
-### `npm run build`
+### Admin View
+*Admin View*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Admins have been assigned special credentials to access the Admin Panel. These credentials are to be used exclusively by admins.
+- After logging in, the admin will see the panel where they can have the right to edit and delete the skills and delete the projects and experience as well.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Admin View](https://i.imgur.com/ncbSlHD.png)
+![Admin View](https://i.imgur.com/Mj3YVYt.jpeg)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Role of multer
+*Let us see how we upload the file image*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- I have used multer in the route, where upload folder has been created after the initialization and I have also set the destination path of file image.
+ 
+![Project](https://i.imgur.com/vvDmZg9.jpeg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- In the projectform.js file, there is an input field of image separately.
+ 
+![ProjectForm](https://i.imgur.com/SfRjsUD.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Introduction
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This is an Portfolio website where there are 3 profiles Admin, Collaborator and Viewer. and Admin can add , delete and edit the skills, projects and experiences and Collaborator can collaborate with the portfolio owner by the contacting him/her with the help of concact page and Viewer can see the projects, skills, experiences with SignIn/LogIn in the website.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
+- User registration and login
+- Admin, Collaborator and Viewer Profile
+- Collaborator will not have the access of delete and edit the skills, projects and experience
+- Integration with MongoDB for data storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies
 
-### Analyzing the Bundle Size
+- Frontend: React, Tailwind CSS
+- Backend: Node js, Express js, jwt, multer
+- Database: MongoDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Getting Started
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Node.js
+- React js
+- MongoDB
 
-### Advanced Configuration
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. *Clone the repository:*
+   git clone https://github.com/jshobhit11/LucidGrowth_Frontend.git
 
-### Deployment
+   
+2. **Install frontend dependencies:**
+    
+    cd Frontend
+    npm install
+3. *Install backend dependencies:*
+   
+   cd Backend
+   npm install
+   
+### Running the Application
+1. **Start the backend server:**
+   npm start
+2. **Start the frontend server:**
+   
+    cd Frontend
+    npm start
+    
+## Frontend Components
+*HomePage*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The main landing page of the application that provides the basic introduction of the portfolio ownwer.
 
-### `npm run build` fails to minify
+*Login*
+A component that handles user authentication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Register*
+A component that allows new users to create an account.
+
+*Projects*
+A component that shows the project done by the portfolio owner and for the admin, the admin cand add more projects as well.
+
+*Skills*
+A component that shows the skills achieved by the owner and admin can add more skills that admin will learn in future.
+
+*Experiences*
+A component that shows the experiences that the admin have and will update with the time in future.
+
+# Backend
+
+*Models*
+
+Define the data structure and schema for the application using Mongo DB.
+
+*Routes*
+
+Define the API endpoints for user registration, Projects, skills, Experiences and concact. 
+
+*Multer*
+
+Help in uploading the file image in the projects section.
+
+*Configuration*
+
+Contains configuration settings for the Port no, mongo db url and jwt secret.
