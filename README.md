@@ -9,7 +9,7 @@
 - Please note that if the application does not run directly after cloning the repository, below is the deployed live link.
 
 *Deployed Link:*
-- Click [here](lucidgrowthproject.netlify.app)
+- Click [here](https://lucidgrowthproject.netlify.app)
 ## Flow of Application
 
 ### User View
