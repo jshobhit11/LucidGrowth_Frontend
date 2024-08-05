@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://lucidgrowth-project.onrender.com/projects/user/signup",
+        "https://lucidgrowth-project.onrender.com/user/signup",
         data
       );
 
